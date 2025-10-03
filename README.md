@@ -20,3 +20,39 @@
 
 - **Пользовательский интерфейс:** Интерфейс для взаимодействия с системой, позволяющий пользователям вводить запросы и просматривать ответы.
 
+## Структура проекта
+
+Примерная структура проекта:
+
+```
+.
+├── README.md
+├── requirements.txt
+├── config/
+│   └── settings.py
+├── src/
+│   ├── __init__.py
+│   ├── data_processing/
+│   │   ├── __init__.py
+│   │   ├── one_s_connector.py
+│   │   └── document_parser.py
+│   ├── retrieval/
+│   │   ├── __init__.py
+│   │   ├── vector_store.py
+│   │   └── retriever.py
+│   ├── generation/
+│   │   ├── __init__.py
+│   │   └── llm_model.py
+│   ├── api/
+│   │   ├── __init__.py
+│   │   └── main.py
+│   └── utils/
+│       ├── __init__.py
+│       └── helpers.py
+├── notebooks/
+│   └── research.ipynb
+└── tests/
+    ├── __init__.py
+    └── test_*.py
+```
+
